@@ -51,7 +51,7 @@ jobs:
           cp CONTRIBUTORS.svg .deploy
       - name: Create Tag
         id: create_tag
-        uses: jiangjiawei520/create-tag-action@main
+        uses: jaywcjlove/create-tag-action@main
         with:
           package-path: ./package.json
 
