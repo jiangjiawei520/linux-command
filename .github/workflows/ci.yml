@@ -25,7 +25,7 @@ jobs:
           avatarSize: 42
 
       - name: Modify README.md
-        uses: jiangjiawei520/github-action-modify-file-content@main
+        uses: jaywcjlove/github-action-modify-file-content@main
         with:
           path: README.md
           openDelimiter: '<!--AUTO_GENERATED_PLEASE_DONT_DELETE_IT-->'
@@ -33,7 +33,7 @@ jobs:
           body: |
             ${{steps.contributors.outputs.htmlList}}
       - name: Modify contributors.ejs
-        uses: jiangjiawei520/github-action-modify-file-content@main
+        uses: jaywcjlove/github-action-modify-file-content@main
         with:
           path: template/contributors.ejs
           openDelimiter: '<!--AUTO_GENERATED_PLEASE_DONT_DELETE_IT-->'
